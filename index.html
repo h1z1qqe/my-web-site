@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>DevPortfolio</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Блог</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                    </ul>
+                    <div class="theme-toggle">
+                        <button id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Добро пожаловать в DevPortfolio</h1>
+                <p>Проект по освоению полного цикла веб-разработки: от кода до деплоя на GitHub Pages</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="visitorCount">0</span>
+                        <span class="stat-label">Посетителей</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Страницы</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Функции</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">Узнать больше</a>
+                    <a href="contact.html" class="btn btn-secondary">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Последние новости -->
+    <section class="news">
+        <div class="container">
+            <h2>Последние новости</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">15</span>
+                        <span class="month">Окт</span>
+                    </div>
+                    <h3>Запуск проекта DevPortfolio</h3>
+                    <p>Сегодня мы запустили наш новый сайт-визитку. Проект создан с использованием чистого HTML, CSS и JavaScript.</p>
+                    <a href="blog.html#post1" class="news-link">Читать далее →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">12</span>
+                        <span class="month">Окт</span>
+                    </div>
+                    <h3>Добавлена темная тема</h3>
+                    <p>Реализована функция переключения между светлой и темной темой с сохранением выбора пользователя.</p>
+                    <a href="blog.html#post2" class="news-link">Читать далее →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">10</span>
+                        <span class="month">Окт</span>
+                    </div>
+                    <h3>Поддержка мобильных устройств</h3>
+                    <p>Сайт теперь полностью адаптирован для мобильных устройств и планшетов.</p>
+                    <a href="blog.html#post3" class="news-link">Читать далее →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Быстрые ссылки -->
+    <section class="quick-links">
+        <div class="container">
+            <h2>Быстрые ссылки</h2>
+            <div class="links-grid">
+                <a href="about.html" class="link-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>О проекте</h3>
+                    <p>Узнайте больше о целях и задачах проекта</p>
+                </a>
+                <a href="blog.html" class="link-card">
+                    <i class="fas fa-blog"></i>
+                    <h3>Блог</h3>
+                    <p>Читайте последние новости и статьи</p>
+                </a>
+                <a href="contact.html" class="link-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Контакты</h3>
+                    <p>Свяжитесь с нами для сотрудничества</p>
+                </a>
+                <a href="https://github.com" target="_blank" class="link-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Посмотрите исходный код проекта</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DevPortfolio</h3>
+                    <p>Проект для освоения полного цикла веб-разработки</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Страницы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: info@devportfolio.com</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DevPortfolio. Все права защищены.</p>
+                <div class="footer-theme-toggle">
+                    <span>Тема: </span>
+                    <button id="footerThemeToggle">
+                        <i class="fas fa-moon"></i> Сменить тему
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
