@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio - Блог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>DevPortfolio</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                        <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> Блог</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                    </ul>
+                    <div class="theme-toggle">
+                        <button id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Блог -->
+    <section class="blog">
+        <div class="container">
+            <h1>Блог и новости</h1>
+            <div class="blog-search">
+                <input type="text" id="blogSearch" placeholder="Поиск по блогу...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-post" id="post1">
+                    <div class="post-header">
+                        <div class="post-date">
+                            <span class="day">15</span>
+                            <span class="month">Окт</span>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="post-title">
+                            <h2>Запуск проекта DevPortfolio</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-user"></i> Алексей Иванов</span>
+                                <span><i class="fas fa-tag"></i> Новости</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Сегодня мы с гордостью представляем наш новый проект - DevPortfolio. Это сайт-визитка, созданный для демонстрации навыков веб-разработки и освоения полного цикла разработки веб-приложений.</p>
+                        <p>Проект создан с использованием чистого HTML, CSS и JavaScript без использования фреймворков. Это позволяет нам лучше понять основы веб-разработки и освоить фундаментальные технологии.</p>
+                        <p>Одной из ключевых целей проекта является освоение работы с Git и системой контроля версий, а также деплой статических сайтов на GitHub Pages.</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="btn-like" data-post="post1">
+                            <i class="far fa-heart"></i> <span class="like-count">5</span>
+                        </button>
+                        <a href="#post1" class="btn-read-more">Читать далее</a>
+                    </div>
+                </article>
+                
+                <article class="blog-post" id="post2">
+                    <div class="post-header">
+                        <div class="post-date">
+                            <span class="day">12</span>
+                            <span class="month">Окт</span>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="post-title">
+                            <h2>Добавлена темная тема</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-user"></i> Мария Петрова</span>
+                                <span><i class="fas fa-tag"></i> Дизайн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Мы рады сообщить, что на сайте теперь доступна функция переключения между светлой и темной темой. Эта функция особенно полезна для тех, кто предпочитает работать в темное время суток или просто любит темные темы в интерфейсах.</p>
+                        <p>Тема сохраняется с использованием localStorage, что означает, что ваш выбор будет сохранен даже после закрытия браузера. Это достигается с помощью простого JavaScript кода:</p>
+                        <pre><code>function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', 
+        body.classList.contains('dark-theme') ? 'dark' : 'light');
+}</code></pre>
+                        <p>Попробуйте переключить тему с помощью кнопки в верхнем правом углу сайта!</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="btn-like" data-post="post2">
+                            <i class="far fa-heart"></i> <span class="like-count">12</span>
+                        </button>
+                        <a href="#post2" class="btn-read-more">Читать далее</a>
+                    </div>
+                </article>
+                
+                <article class="blog-post" id="post3">
+                    <div class="post-header">
+                        <div class="post-date">
+                            <span class="day">10</span>
+                            <span class="month">Окт</span>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="post-title">
+                            <h2>Поддержка мобильных устройств</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-user"></i> Иван Сидоров</span>
+                                <span><i class="fas fa-tag"></i> Разработка</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Сегодня мы завершили работу над адаптивным дизайном сайта. Теперь DevPortfolio корректно отображается на всех устройствах: от смартфонов до десктопных компьютеров.</p>
+                        <p>Для создания адаптивного дизайна мы использовали технику Mobile First. Это означает, что мы сначала разрабатывали дизайн для мобильных устройств, а затем добавляли стили для планшетов и десктопов с помощью медиа-запросов.</p>
+                        <p>Основные медиа-запросы, которые мы использовали:</p>
+                        <pre><code>/* Мобильные устройства */
+@media (min-width: 768px) {
+    /* Планшеты */
+}
+
+@media (min-width: 1024px) {
+    /* Десктопы */
+}</code></pre>
+                        <p>Адаптивный дизайн - это не просто изменение размера элементов, но и перестройка всей структуры страницы для оптимального отображения на каждом типе устройств.</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="btn-like" data-post="post3">
+                            <i class="far fa-heart"></i> <span class="like-count">8</span>
+                        </button>
+                        <a href="#post3" class="btn-read-more">Читать далее</a>
+                    </div>
+                </article>
+                
+                <article class="blog-post" id="post4">
+                    <div class="post-header">
+                        <div class="post-date">
+                            <span class="day">05</span>
+                            <span class="month">Окт</span>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="post-title">
+                            <h2>Использование localStorage в JavaScript</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-user"></i> Алексей Иванов</span>
+                                <span><i class="fas fa-tag"></i> JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>В этом проекте мы активно используем localStorage для сохранения пользовательских данных. localStorage - это веб-хранилище, которое позволяет сохранять данные в браузере пользователя даже после закрытия страницы.</p>
+                        <p>В нашем проекте мы используем localStorage для трех основных функций:</p>
+                        <ol>
+                            <li>Сохранение выбранной темы (светлая/темная)</li>
+                            <li>Сохранение данных формы обратной связи</li>
+                            <li>Сохранение лайков к постам в блоге</li>
+                        </ol>
+                        <p>Основные методы работы с localStorage:</p>
+                        <pre><code>// Сохранение данных
+localStorage.setItem('key', 'value');
+
+// Получение данных
+const value = localStorage.getItem('key');
+
+// Удаление данных
+localStorage.removeItem('key');
+
+// Очистка всех данных
+localStorage.clear();</code></pre>
+                        <p>Важно помнить, что localStorage может хранить только строки. Для хранения объектов их нужно преобразовывать в JSON строку с помощью JSON.stringify(), а при получении - парсить с помощью JSON.parse().</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="btn-like" data-post="post4">
+                            <i class="far fa-heart"></i> <span class="like-count">15</span>
+                        </button>
+                        <a href="#post4" class="btn-read-more">Читать далее</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DevPortfolio</h3>
+                    <p>Проект для освоения полного цикла веб-разработки</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Страницы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: info@devportfolio.com</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DevPortfolio. Все права защищены.</p>
+                <div class="footer-theme-toggle">
+                    <span>Тема: </span>
+                    <button id="footerThemeToggle">
+                        <i class="fas fa-moon"></i> Сменить тему
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
